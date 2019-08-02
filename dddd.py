@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -35,4 +36,5 @@ async def on_member_remove(member):
 
 
 
-client.run("NjA2ODkyNTQxOTU0MjI4MjM1.XURqvQ.88a0u64pdMu5_MRa1fdt9ja488k")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
